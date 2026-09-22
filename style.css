@@ -4,7 +4,7 @@ body {
   margin: 0px;
   padding: 0px;
   background: linear-gradient(to top left, #9061bd, #eb333f);
-  
+  min-height: 800px;
   font-family: "Manrope", sans-serif;
   font-optical-sizing: auto;
 }
@@ -18,6 +18,7 @@ main {
   justify-content: center;
   box-shadow: 1px 1px 10px;
   border-radius: 10px;
+  position: relative;
 }
 
 .player-0 {
@@ -25,6 +26,7 @@ main {
   background-color: rgb(255, 255, 255, 0.3);
   border-radius: 10px 0px 0px 10px;
   text-align: center;
+  padding-bottom: 100px;
 }
 
 .player-1 {
@@ -32,6 +34,7 @@ main {
   background-color: rgb(255, 255, 255, 0.3);
   border-radius: 0px 10px 10px 0px;
   text-align: center;
+  padding-bottom: 100px;
 }
 
 .active {
@@ -72,31 +75,47 @@ main {
 .current-score-0 {
   font-size: 25px;
 }
-.new-game,.roll-dice,.hold{
-    background-color: rgba(250, 235, 215, 0.701);
-    border-radius: 10PX;
-    padding: 5PX;
-    cursor: pointer;
-    
+
+.btn-new-game,
+img,
+.btn-roll,
+.btn-hold {
+  position: absolute;
+  left: 510px;
 }
-.new-game{
-    position: relative;
-    bottom:700px;
-    left: 700px;
+
+img {
+  top: 150px;
+  left: 486px;
 }
-.roll-dice
-{ 
-position: relative;
-    bottom:400px;
-    left: 500px;
+
+.btn-roll {
+  top: 450px;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.771);
+  padding: 10px 20px;
+  left: 465px;
+  cursor: pointer;
 }
-.hold{
-    position: relative;
-    bottom:300px;
-    left: 410px;
+
+.btn-hold {
+  top: 520px;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.771);
+  padding: 10px 20px;
+  left: 478px;
+  cursor: pointer;
 }
-img{
-     position: relative;
-    bottom:500px;
-    left: 600px;
+
+.btn-new-game {
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.771);
+  padding: 10px 20px;
+  left: 460px;
+  cursor: pointer;
+  top: 30px;
+}
+
+.hidden {
+  display: none;
 }
